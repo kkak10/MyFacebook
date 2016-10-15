@@ -11,19 +11,23 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import {FormattedMessage} from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import { createSelector } from 'reselect';
 import { selectLocale } from './selectors';
-import Header from './_components/_Header';
+import FacebookAuth from 'utils/FacebookAuth'
+import FacebookLoginButton from 'components/FacebookLoginButton'
 
 
 export default class HomePage extends React.Component {
+  componentWillMount() {
+    FacebookAuth.init();
+  }
 
   render() {
     return (
       <h1>
-        <Header />
+        <FacebookLoginButton />
         <FormattedMessage {...messages.header} />
       </h1>
     );
