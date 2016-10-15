@@ -229,6 +229,7 @@
     "redux": "3.6.0",
     "redux-immutable": "3.0.8",
     "redux-saga": "0.11.1",
+    "request": "^2.75.0",
     "reselect": "2.5.4",
     "sanitize.css": "4.1.0",
     "warning": "3.0.0",
@@ -305,6 +306,7 @@
     "stylelint-config-standard": "13.0.0",
     "url-loader": "0.5.7",
     "webpack": "2.1.0-beta.22",
+    "webpack-config-loader": "^0.1.0",
     "webpack-dev-middleware": "1.8.0",
     "webpack-hot-middleware": "2.12.2"
   }

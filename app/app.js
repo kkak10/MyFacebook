@@ -5,7 +5,7 @@
  * code.
  */
 import 'babel-polyfill';
-
+import * as environmentConfig from 'webpack-config-loader!./environmentConfig.js'
 /* eslint-disable import/no-unresolved */
 // Load the manifest.json file and the .htaccess file
 import '!file?name=[name].[ext]!./manifest.json';
@@ -34,6 +34,7 @@ import 'sanitize.css/sanitize.css';
 // e.g. `const browserHistory = useRouterHistory(createBrowserHistory)();`
 const initialState = {};
 const store = configureStore(initialState, browserHistory);
+
 
 // Sync history and store, as the react-router-redux reducer
 // is under the non-default key ("routing"), selectLocationState
